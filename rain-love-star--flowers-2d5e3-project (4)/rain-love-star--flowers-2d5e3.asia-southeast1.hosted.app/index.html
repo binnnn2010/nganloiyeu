@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090609">
+  <meta name="description" content="Một món quà tình yêu với hoa hồng, cơn mưa lời thương và trái tim ngân hà.">
+  <title>Ngàn lời yêu ♡</title>
+  <link rel="stylesheet" href="css/legacy.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="assets/vendor/three-r128.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="intro-open">
+  <div id="loading" class="loading-screen" aria-live="polite">
+    <span class="loading-heart">♡</span>
+    <p>Đang chuẩn bị một chút yêu thương...</p>
+  </div>
+
+  <section id="intro" class="intro-screen" aria-label="Mở món quà">
+    <div class="intro-glow"></div>
+    <div id="intro-dust" class="intro-dust"></div>
+    <canvas id="intro-rose-canvas" class="intro-rose-canvas"></canvas>
+    <div class="intro-petals" aria-hidden="true"></div>
+    <div class="intro-copy">
+      <p class="eyebrow">A LITTLE GIFT FOR YOU</p>
+      <h1>Ngàn lời yêu</h1>
+      <p class="intro-subtitle">Có những điều dịu dàng, chỉ muốn dành riêng cho em.</p>
+      <button id="intro-btn" class="intro-button" type="button" disabled>Đang chuẩn bị món quà...</button>
+      <span class="intro-footnote">chạm nhẹ để bắt đầu ♡</span>
+    </div>
+  </section>
+
+  <main id="gift-app">
+    <div id="stars" class="stars" aria-hidden="true"></div>
+    <div id="shooting-stars" class="shooting-stars" aria-hidden="true"></div>
+    <div id="sky-veil" class="sky-veil" aria-hidden="true"></div>
+    <div id="three-container" class="three-container" aria-label="Cơn mưa lời yêu"></div>
+
+    <div class="top-note">
+      <span class="top-note-kicker">A UNIVERSE OF LOVE</span>
+      <span class="top-note-title">Gửi em, bằng tất cả dịu dàng</span>
+    </div>
+
+    <div id="heart-progress-wrap" class="heart-progress-wrap" aria-live="polite">
+      <div id="heart-progress-label" class="heart-progress-label">Giữ tay để gom yêu thương</div>
+      <div class="heart-progress-track"><span id="heart-progress-fill"></span></div>
+      <div id="heart-progress-hint" class="heart-progress-hint">Chạm và giữ ở bất kỳ đâu</div>
+    </div>
+
+    <div id="heart-charge" class="heart-charge" aria-hidden="true"></div>
+    <div id="heart-burst" class="heart-burst" aria-hidden="true"></div>
+
+    <section id="memory-orbit" class="memory-orbit" aria-label="Vũ trụ kỷ niệm">
+      <div id="orbit-stage" class="orbit-stage">
+        <div class="orbit-heading">
+          <span class="eyebrow">OUR LITTLE UNIVERSE</span>
+          <h2>Mỗi vì sao là một điều anh thương</h2>
+          <p>Chạm vào những ký ức đang xoay quanh trái tim.</p>
+        </div>
+        <div id="orbit-heart" class="orbit-heart" aria-label="Trái tim"></div>
+        <div id="heart-fountain" class="heart-fountain"></div>
+        <div id="heart-satellites" class="heart-satellites"></div>
+      </div>
+      <div id="orbit-zoom-veil" class="orbit-zoom-veil" aria-hidden="true"></div>
+    </section>
+
+    <section id="orbit-card" class="orbit-card" aria-hidden="true">
+      <button id="orbit-close" class="icon-button" type="button" aria-label="Đóng">×</button>
+      <div id="orbit-card-body" class="orbit-card-body"></div>
+    </section>
+
+    <section id="full-letter" class="full-letter" aria-hidden="true">
+      <div id="full-letter-sheet" class="full-letter-sheet">
+        <button class="letter-close" type="button" onclick="document.getElementById('full-letter').classList.remove('is-open')">×</button>
+        <p class="full-letter-lead">A LETTER FOR YOU</p>
+        <h2 class="full-letter-title">Gửi em, người anh thương.</h2>
+        <p class="full-letter-final-message">Cảm ơn em vì đã xuất hiện, làm những ngày bình thường trở nên thật đặc biệt. Mong rằng chúng ta sẽ còn cùng nhau đi qua thật nhiều mùa thương nhớ.</p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="backgroundMusic" preload="none" loop></audio>
+</body>
+</html>
